@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Geomagnetic Research and Satellite Missions</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('C:/Users/mathu/OneDrive/Documents/nasa.bg1.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: #e0e0e0;
+            font-size: 1em;
+        }
+
+        header {
+            background-color: rgba(10, 42, 77, 0.95);
+            color: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #b8b8b8;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 50px;
+            text-align: center;
+            background-color: rgba(33, 33, 33, 0.9);
+            margin: 40px auto;
+            max-width: 1200px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.6);
+            font-size: 1.2em;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #cfd7ff;
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        h1:hover {
+            color: #9aa0ff;
+        }
+
+        h2, h3 {
+            font-size: 2.2em;
+            color: #d5e3ff;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.7;
+        }
+
+        .story-box {
+            background-color: #292929;
+            padding: 35px;
+            margin: 30px auto;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+            max-width: 1000px;
+            border-radius: 12px;
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        /* Flex container for graph and image */
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .image-row img {
+            max-width: 48%;
+            height: auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+        }
+
+        /* Satellite Mission Links */
+        .satellite-links {
+            margin: 40px auto;
+            max-width: 700px;
+            text-align: center;
+        }
+
+        .satellite-links a {
+            display: block;
+            margin: 10px 0;
+            padding: 15px;
+            background-color: rgba(70, 130, 180, 0.9);
+            color: white;
+            font-size: 1.3em;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .satellite-links a:hover {
+            background-color: rgba(0, 123, 255, 0.9);
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(10, 42, 77, 0.95);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 1.2em;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Accessibility for Smooth Scrolling */
+        a {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="pics/nasa logo.jpg" alt="NASA Logo" width="150">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#research">Research</a></li>
+                <li><a href="may2024.html">What happened in May 2024</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="main-content" id="research">
+        <h1>NASA Geomagnetic Research</h1>
+        <p>NASA has been monitoring geomagnetic storms for decades, studying the impact of solar flares and coronal mass ejections on our planet. Here's the latest research from NASA's space weather team.</p>
+
+        <!-- Flexbox layout for graph and second image -->
+        <div class="image-row">
+            <img src="pics/graph.png" alt="Geomagnetic Storms May 2024 Graph">
+            <img src="pics/graph.1.png" alt="Satellite Image during Geomagnetic Storms">
+        </div>
+
+        <div class="story-box">
+            <h2>May 2024 Solar Storms</h2>
+            <p>The May 2024 solar storms, part of Solar Cycle 25, were among the strongest since 1989, peaking on May 11 as a G5-class geomagnetic storm. Originating from solar active region Sun(AR3664), these storms caused widespread auroras visible as far south as Greece. They disrupted Earth’s radiation belts, resulting in significant electron and proton flux changes monitored by satellites like Sentinel-6, Galileo, and EDRS-C.</p>
+
+            <h3>Satellite Impact</h3>
+            <ul>
+                <li><strong>GOES-16:</strong> Experienced temporary data outages due to geomagnetic interference.</li>
+                <li><strong>Sentinel-6:</strong> Monitored changes in radiation belts, including a drop in electron flux and subsequent particle injection.</li>
+                <li><strong>Galileo:</strong> GPS signals were disrupted due to ionospheric disturbances, impacting navigation accuracy.</li>
+                <li><strong>EDRS-C:</strong> Recorded fluctuations in electron flux, affecting data transmission.</li>
+                <li><strong>PROBA-1 & PROBA-V:</strong> Observed radiation belt changes, measuring particle flux disturbances.</li>
+            </ul>
+
+            <h3>Mitigation Measures for Satellite Protection</h3>
+            <ul>
+                <li><strong>Radiation Hardened Electronics:</strong> Satellites are designed with radiation-hardened electronics to withstand bursts of energetic particles.</li>
+                <li><strong>Shutdown Protocols:</strong> Some satellites may be temporarily put into safe modes to avoid permanent damage during solar storms.</li>
+                <li><strong>Real-Time Monitoring:</strong> Space weather monitoring systems provide real-time data on solar activity, allowing operators to take preemptive measures.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2024 NASA | Geomagnetic Storms Research & Satellite Missions</p>
+    </footer>
+
+    <script>
+        // Add smooth scrolling to all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

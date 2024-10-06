@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Cosmic Battle: Earth's Avengers vs. The Solar Storm</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Horizontal scrolling & animations -->
+    <style>
+        /* General reset and styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: 'Merriweather', serif;
+            background-color: #1d1f21;
+            color: #f5f5f5;
+        }
+
+        /* Container for horizontal scrolling */
+        .scroll-container {
+            display: flex;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+            scroll-snap-type: x mandatory;
+        }
+
+        /* Each section will be a full page width */
+        .section {
+            min-width: 100vw;
+            height: 100vh;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            scroll-snap-align: start;
+            transition: transform 1s ease-in-out;
+            position: relative;
+        }
+
+        /* Alternating background colors */
+        .section:nth-child(odd) {
+            background-color: #333;
+        }
+
+        .section:nth-child(even) {
+            background-color: #444;
+        }
+
+        /* Header */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Text and image styling */
+        .section h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            opacity: 0;
+            animation: fadeInText 1s forwards;
+        }
+
+        .section p {
+            font-size: 1.4rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            opacity: 0;
+            animation: fadeInText 1.5s forwards;
+        }
+
+        .section img {
+            max-width: 80%;
+            margin-top: 2rem;
+            opacity: 0;
+            animation: fadeInImage 2s forwards;
+            transform: scale(0.8);
+        }
+
+        /* Animations */
+        @keyframes fadeInText {
+            0% { opacity: 0; transform: translateX(20px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes fadeInImage {
+            0% { opacity: 0; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        /* Horizontal scrolling with space between sections */
+        .scroll-container {
+            display: flex;
+            gap: 10px; /* Adds space between sections */
+        }
+
+        /* Fancy smooth zoom/slide transition for each section */
+        .section:hover {
+            transform: scale(1.03);
+        }
+
+        /* Footer styling */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #f5f5f5;
+            text-align: center;
+            padding: 1rem;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#part1">The Sun’s Big Temper Tantrum</a>
+        <a href="#part2">Earth’s Avengers Assemble</a>
+        <a href="#part3">The Battle Begins</a>
+        <a href="#part4">Power Grids in Peril</a>
+        <a href="#part5">GPS Glitches</a>
+        <a href="#part6">Satellites Under Attack</a>
+        <a href="#part7">Earth's Last Stand</a>
+        <a href="#part8">The Aftermath</a>
+    </nav>
+
+    <!-- Horizontal Scrollable Container -->
+    <div class="scroll-container">
+
+        <!-- Part 1: The Sun’s Big Temper Tantrum -->
+        <section id="part1" class="section">
+            <h2>The Sun’s Big Temper Tantrum</h2>
+            <p>In the heart of our solar system, the Sun unleashed a massive explosion of energy—a solar flare! Along with it came the Sun’s secret weapon: the Coronal Mass Ejection, a powerful blast of charged particles aimed right at Earth!</p>
+            <img src="pics/solar_flares_animated.gif" alt="Solar Flare">
+        </section>
+
+        <!-- Part 2: Earth’s Avengers Assemble -->
+        <section id="part2" class="section">
+            <h2>Earth’s Avengers Assemble</h2>
+            <p>Earth’s protectors, the Magnetosphere and Atmosphere, stood ready like Earth’s Avengers. The Magnetosphere acted as the mighty shield, and the Atmosphere deflected attacks with ease!</p>
+            <img src="pics/hulk.gif" alt="Earth's Shield">
+        </section>
+
+        <!-- Part 3: The Battle Begins -->
+        <section id="part3" class="section">
+            <h2>The Battle Begins</h2>
+            <p>As the storm hit Earth, the Magnetosphere and Atmosphere created an epic light show in the sky—an aurora! The Northern Lights and Southern Lights danced across the sky in victory!</p>
+            <img src="pics/aurora1.jpg" alt="Aurora Lights">
+        </section>
+
+        <!-- Part 4: Power Grids in Peril -->
+        <section id="part4" class="section">
+            <h2>Power Grids in Peril</h2>
+            <p>The Sun’s particles overloaded power grids, causing blackouts in some regions. It was like Iron Man’s arc reactor being overloaded!</p>
+            <img src="pics/scarlet witch.gif" alt="Power Grid Blackout">
+        </section>
+
+        <!-- Part 5: GPS Glitches -->
+        <section id="part5" class="section">
+            <h2>GPS Glitches</h2>
+            <p>Suddenly, GPS systems were thrown into chaos! Drivers, planes, and ships lost their way. It was like Hawkeye losing his target!</p>
+            <img src="pics/gps_glitch.gif" alt="GPS Glitch">
+        </section>
+
+        <!-- Part 6: Satellites Under Attack -->
+        <section id="part6" class="section">
+            <h2>Satellites Under Attack</h2>
+            <p>Earth’s satellites, like Thor’s hammer, were hit hard by the Sun’s storm, weakening their systems. Scientists worked quickly to minimize the damage!</p>
+            <img src="pics/satellite attack.jpg" alt="Satellites Under Attack">
+        </section>
+
+        <!-- Part 7: Earth's Last Stand -->
+        <section id="part7" class="section">
+            <h2>Earth's Last Stand</h2>
+            <p>Earth’s Magnetosphere, the strongest Avenger, absorbed much of the Sun’s storm, protecting the planet from the worst effects!</p>
+            <img src="pics/captain america.gif" alt="Magnetosphere Protection">
+        </section>
+
+        <!-- Part 8: The Aftermath -->
+        <section id="part8" class="section">
+            <h2>The Aftermath</h2>
+            <p>As the storm passed, Earth’s heroes stood victorious. Power was restored, GPS systems were back on track, and scientists studied the storm for future battles!</p>
+            <img src="pics/iron man.gif" alt="Earth's Victory">
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 NASA Clone | Earth's Avengers vs. The Solar Storm</p>
+    </footer>
+
+</body>
+
+</html>
